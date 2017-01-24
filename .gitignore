@@ -1,2 +1,6 @@
 #all executables
 *.exe
+
+#all text and all csv
+*.txt
+*.csv
