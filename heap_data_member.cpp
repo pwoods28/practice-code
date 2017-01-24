@@ -45,7 +45,9 @@ Critter::Critter(const Critter& c)		//copy constructor definition
 
 Critter& Critter::operator=(const Critter& c)	//overloaded assignment op def
 {
-	cout << "Overloaded Assignment Operatr called\n";
+	cout << "Overloaded Assignment Operator called\n";
+
+	//"this" is a pointer to the object used to call the function. In this case, that object is the Critter object to the left of the '=' operator in the calling line from the calling function testAssignmentOp(); specifically, crit1.
 	if (this != &c)
 	{
 		delete m_pName;

@@ -34,9 +34,15 @@ int main()
 	Peek(crit);
 
 	cout << "\nSending crit object to cout with the << operator:\n";
-	cout << crit;
+	cout << crit << endl;
 
 	return 0;
+}
+
+//global friend function which can access all of a Critter object's members
+void Peek(const Critter& aCritter)
+{
+	cout << aCritter.m_Name << endl;
 }
 
 //global friend function which can access all of Critter object's members. Overloads the << operator so you can send a Critter object to cout
